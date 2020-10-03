@@ -16,33 +16,33 @@ class MyApp extends StatelessWidget {
             // verticalDirection: VerticalDirection.up,
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             // crossAxisAlignment: CrossAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                height: 100,
+                height: double.infinity,
                 width: 100,
-                color: Colors.white,
+                color: Colors.red,
                 child: Text(
                   'Container 1',
                 ),
               ),
               SizedBox(
-                height: 20,
+                width: 55,
               ),
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.blue,
+                color: Colors.yellow,
                 child: Text('Container 2'),
               ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                child: Text('Container 3'),
+              SizedBox(
+                width: 55,
               ),
               Container(
-                height: 1,
+                width: 100,
+                height: double.infinity,
+                color: Colors.blue,
+                child: Text('Container 3'),
               ),
             ],
           ),
