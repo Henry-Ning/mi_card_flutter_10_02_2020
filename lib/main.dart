@@ -11,42 +11,54 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            // mainAxisSize: MainAxisSize.min,
-            // verticalDirection: VerticalDirection.up,
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            // crossAxisAlignment: CrossAxisAlignment.end,
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: double.infinity,
-                width: 100,
-                color: Colors.red,
-                child: Text(
-                  'Container 1',
-                ),
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundColor: Colors.red,
+            ),
+            Text(
+              'Henry Ning',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.white
               ),
-              SizedBox(
-                width: 55,
+            ),
+            Text(
+              'Flutter Developer',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white
               ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.yellow,
-                child: Text('Container 2'),
+            ),
+            Container(
+              width: 200,
+              height: 30,
+              color: Colors.white,
+              child: Text(
+                'Telephone: 123-1234567'
               ),
-              SizedBox(
-                width: 55,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: 200,
+              height: 30,
+              color: Colors.white,
+              child: Text(
+                  'Email: 1234@123.com'
               ),
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.blue,
-                child: Text('Container 3'),
-              ),
-            ],
-          ),
-        ),
+            ),
+            Container(
+              width: double.infinity,
+            ),
+          ],
+        )),
       ),
     );
   }
