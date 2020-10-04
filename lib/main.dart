@@ -17,30 +17,26 @@ class MyApp extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.red,
+              backgroundImage: AssetImage('images/download.jpg'),
             ),
             Text(
               'Henry Ning',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
-                color: Colors.white
+                fontSize: 40,
+                color: Colors.white,
+                fontFamily: 'Pacifico',
               ),
             ),
             Text(
-              'Flutter Developer',
+              'FLUTTER DEVELOPER',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white
-              ),
-            ),
-            Container(
-              width: 200,
-              height: 30,
-              color: Colors.white,
-              child: Text(
-                'Telephone: 123-1234567'
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                fontFamily: 'SourceSansPro',
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(
@@ -50,9 +46,16 @@ class MyApp extends StatelessWidget {
               width: 200,
               height: 30,
               color: Colors.white,
-              child: Text(
-                  'Email: 1234@123.com'
-              ),
+              child: Text('Telephone: 123-1234567'),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              width: 200,
+              height: 30,
+              color: Colors.white,
+              child: Text('Email: 1234@123.com'),
             ),
             Container(
               width: double.infinity,
