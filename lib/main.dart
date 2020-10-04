@@ -39,23 +39,51 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
-              height: 10,
+            Container(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.phone,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    'Telephone: 123-1234567',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
             ),
             Container(
-              width: 200,
-              height: 30,
               color: Colors.white,
-              child: Text('Telephone: 123-1234567'),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              width: 200,
-              height: 30,
-              color: Colors.white,
-              child: Text('Email: 1234@123.com'),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              padding: EdgeInsets.all(10),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    'Email: baobao@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
             ),
             Container(
               width: double.infinity,
