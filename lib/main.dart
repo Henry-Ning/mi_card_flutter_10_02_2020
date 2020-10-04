@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
@@ -39,54 +38,44 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    'Telephone: 123-1234567',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
               ),
             ),
-            Container(
-              color: Colors.white,
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                ),
+                title: Text(
+                  'Telephone: 123-1234567',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20,
                   ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    'Email: baobao@gmail.com',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
-            Container(
-              width: double.infinity,
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                ),
+                title: Text(
+                  'Email: baobao@gmail.com',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20,
+                  ),
+                ),
+              ),
             ),
           ],
         )),
